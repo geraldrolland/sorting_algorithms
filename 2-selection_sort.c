@@ -14,12 +14,14 @@ void selection_sort(int *array, size_t size)
 	int min_val;
 	size_t idx;
 
+	if (size < 2)
+		return;
 	for (i = 0; i < size - 1; i++)
 	{
 		idx = i;        /* Assume the current index has the minimum value */
-                min_val = array[i]; /* Initialize minimum value */
+		min_val = array[i]; /* Initialize minimum value */
 		j = i + 1;
-		
+
 		for (; j < size; j++)
 		{
 			if (array[j] < min_val)
