@@ -14,6 +14,9 @@ void shell_sort(int *array, size_t size)
 	size_t gap, i, j;
 	int set_flag;
 
+	if (size < 2)
+		return;
+
 	/* Calculate initial gap for shell sort */
 	while (gap < size / 3)
 	{
