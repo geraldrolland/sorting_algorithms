@@ -10,7 +10,8 @@
  */
 void shell_sort(int *array, size_t size)
 {
-	int gap = 1, temp, i, j;
+	int temp;
+	size_t gap, i, j;
 
 	/* Calculate initial gap for shell sort */
 	while (gap < size / 3) {
